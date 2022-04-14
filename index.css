@@ -19,10 +19,14 @@ p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    ;
 }
 
+h1, h2, h3{
+ font-family: "strikesans";
+}
+
 .header{
     background-color: #011c4154 ;
     height: 80px;
-    position: fixed;
+    position:fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -127,7 +131,7 @@ p{
     background: none;
     border-radius: 7px;
     font-family: "strikesans";
-    width: 100px;
+    width: 180px;
     height: 25px;
     justify-content: center;
     align-items: center;
@@ -263,7 +267,7 @@ p{
     
     
     .ventanal .element3{
-        grid-template-rows: repeat(2,100px) 166px 65px;
+        grid-template-rows: repeat(2,180px) 166px 65px;
     }
     
     
@@ -272,8 +276,8 @@ p{
     }
   
     .botones{
-        width: 200px;
-        height: 45px;
+        width: 180px;
+        height: 35px;
         margin: 20px 0px 10px 5px;
     }
     
@@ -288,7 +292,7 @@ p{
     }
     
     .botones3{
-        width: 120px;
+        width: 180px;
         height: 35px;
     }
     
@@ -299,6 +303,13 @@ p{
     .final p{
         font-size: 15px;
     }
+
+    
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
 }
 
 @media screen and (max-width: 2000px){
@@ -334,16 +345,16 @@ p{
     
     
     .ventanal .element3{
-        grid-template-rows: repeat(2,130px) 166px 65px;
+        grid-template-rows: repeat(2,180px) 166px 65px;
     }
     
     
     .ventanal h2{
-        font-size: 40px; 
+        font-size: 50px; 
     }
   
     .botones{
-        width: 200px;
+        width: 180px;
         height: 45px;
         margin: 20px 0px 10px 5px;
     }
@@ -359,7 +370,7 @@ p{
     }
     
     .botones3{
-        width: 120px;
+        width: 180px;
         height: 35px;
     }
     
@@ -371,6 +382,7 @@ p{
         font-size: 15px;
     }
 }
+
 
 @media screen and (max-width: 1200px){ 
     
@@ -632,7 +644,7 @@ p{
     }
   
     .botones{
-        width: 170px;
+        width: 150px;
         margin: 25px 0px 10px 5px;
     }
     
@@ -691,7 +703,7 @@ p{
         margin: 0 5px;
     }
     
-    
+   
     
     .botones, .botones3{
         display: flex;
@@ -853,4 +865,645 @@ p{
         text-decoration: none;
         list-style: none;
     }
+}
+
+/* ACERCA DE: */
+
+.caja{
+    width: 1000px;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.visual{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 2% 94% 2% ;
+    grid-template-rows: repeat(2, 350px);
+}
+
+.visual h2{
+    font-size: 30px;
+    text-align: center;
+  
+}
+
+.visual p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.visual .imagen .imagen1{
+    width: 100%;
+    height: 100%;
+    margin: 0 2%;
+}
+
+.CTitulo h2{
+   text-align: center; 
+   font-size: 30px;
+   margin: 25px 0;
+}
+/* --- --- CAROUSEL --- --- */
+
+.carousel__contenedor {
+	position: relative;
+    z-index: 0;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: rgb(0, 0, 0);
+	opacity: 40%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: 8px;
+}
+
+.carousel__siguiente {
+	right: 8px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+	width: 50px;
+	height: 50px;	
+	align-items: center;
+}
+
+.honda{
+    width: 180px;
+    height: 180px;
+    object-fit:fill;
+}
+
+.nissan{
+    width: 180px ;
+    height: 180px;
+}
+
+.bmw{
+    width: 180px ;
+    height: 180px;
+}
+
+.ford{
+    width: 180px ;
+    height: 180px;
+}
+
+.susuki{
+    width: 180px ;
+    height: 180px;
+}
+
+.kia{
+    width: 180px;
+    height: 180px;
+}
+
+.ferrari{
+    width: 180px;
+    height: 180px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: rgb(0, 0, 0);
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+}
+#map{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mapa{
+    height: 100%;
+    width: 100%;
+}
+.telefono{
+  background: #222222c6;
+  color: #fff;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-size: 16px;
+}
+.conjunto-T{
+    display: grid;
+    grid-template-columns: 3% 31.3% 31.3% 31.3% 3%;
+    text-align: center;
+    margin-top: 20px;
+}
+.e-mail{
+    text-align: left;
+    font-size: 14px;
+}
+.c{
+    text-align: right;
+}
+
+@media screen and (max-width: 2000px){
+    .visual{
+        margin-top: 100px;
+        grid-template-columns: 14% 35% 0% 2% 33% 14%;
+        grid-template-rows: 500px;
+    }
+
+    .visual .imagen .imagen1 {
+        object-fit: scale-down;
+    }
+
+    .titulo h2{
+        font-size: 54px;
+    }
+
+    .visual p{
+        font-size: 25px;
+    }
+
+    .contenido p{
+        margin-top: 10px;
+    }
+
+   
+
+    .honda{
+        width: 180px;
+        object-fit: scale-down;
+    }
+    
+    .nissan{
+        width: 180px ;
+        
+    }
+    
+    .bmw{
+        width: 180px ;
+       
+    }
+    
+    .ford{
+        width: 180px ;
+        
+    }
+    
+    .susuki{
+        width: 180px ;
+        
+    }
+    
+    .kia{
+        width: 180px;
+        
+    }
+    
+    .ferrari{
+        width: 180px;
+        
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 14% 72% 14%;
+        grid-template-rows: 500px;
+    }
+
+    .mapa{
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 1500px){
+    .visual{
+        margin-top: 100px;
+        grid-template-columns: 9% 40.75% 0% 2% 38.75% 9%;
+        grid-template-rows: 500px;
+    }
+
+    .visual .imagen .imagen1 {
+        object-fit: scale-down;
+    }
+
+    .titulo h2{
+        font-size: 50px;
+    }
+
+    .visual p{
+        font-size: 25px;
+    }
+
+    .contenido p{
+        margin-top: 10px;
+    }
+
+    .honda{
+        width: 180px;
+        object-fit: scale-down;
+    }
+    
+    .nissan{
+        width: 180px ;
+        
+    }
+    
+    .bmw{
+        width: 180px ;
+       
+    }
+    
+    .ford{
+        width: 180px ;
+        
+    }
+    
+    .susuki{
+        width: 180px ;
+        
+    }
+    
+    .kia{
+        width: 180px;
+        
+    }
+    
+    .ferrari{
+        width: 180px;
+        
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+}
+
+@media screen and (max-width: 1324px){
+    .titulo h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .visual{
+        grid-template-columns: 2% 47% 0% 1% 47% 1%;
+        grid-template-rows: 500px;
+    }
+
+    .visual .imagen .imagen1 {
+        object-fit: scale-down;
+    }
+
+    .titulo h2{
+        font-size: 35px;
+    }
+
+    .visual p{
+        font-size: 25px;
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-columns: 2% 96% 2%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .visual{    
+        grid-template-rows: 590px;
+    }
+
+    .visual .imagen .imagen1 {
+        object-fit: scale-down;
+    }
+
+    .titulo h2{
+        font-size: 35px;
+    }
+
+    .visual p{
+        font-size: 25px;
+    }
+
+    .honda{
+        width: 180px;
+        object-fit: scale-down;
+    }
+    
+    .nissan{
+        width: 180px ;
+        
+    }
+    
+    .bmw{
+        width: 180px ;
+       
+    }
+    
+    .ford{
+        width: 180px ;
+        
+    }
+    
+    .susuki{
+        width: 180px ;
+        
+    }
+    
+    .kia{
+        width: 180px;
+        
+    }
+    
+    .ferrari{
+        width: 180px;
+        
+    }
+}
+
+@media screen and (max-width: 840px){
+    .visual{
+        grid-template-rows: 420px;
+    }
+
+    .visual .imagen .imagen1 {
+        object-fit: scale-down;
+    }
+
+    .titulo h2{
+        font-size: 30px;
+    }
+
+    .visual p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .visual{
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .visual{
+        grid-template-rows: 450px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .visual{
+        grid-template-rows: 450px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .visual{
+        grid-template-rows: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .visual{
+        grid-template-rows: 600px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .caja{
+        width: 1000px;
+        height: 100%;
+        margin-top: 70px;
+    }
+    
+    .visual{
+        display: grid;
+        margin-top: 70px;
+        grid-template-columns: 2% 94% 2% ;
+        grid-template-rows: repeat(2, 350px);
+    }
+    
+    .visual h2{
+        font-size: 30px;
+        text-align: center;
+      
+    }
+    
+    .visual p{
+        text-align: justify;
+        font-size: 18px;
+    }
+    
+    .visual .imagen .imagen1{
+        width: 100%;
+        height: 100%;
+        margin: 0 2%;
+    }
+    
+    .CTitulo h2{
+       text-align: center; 
+       font-size: 30px;
+       margin: 25px 0;
+    }
+    /* --- --- CAROUSEL --- --- */
+    .carousel__contenedor {
+        position: relative;
+        z-index: 0;
+    }
+    
+    .carousel__anterior,
+    .carousel__siguiente {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        top: calc(50% - 35px);
+        cursor: pointer;
+        line-height: 30px;
+        text-align: center;
+        background: none;
+        color: rgb(0, 0, 0);
+        opacity: 40%;
+    }
+    
+    .carousel__anterior:hover,
+    .carousel__siguiente:hover {
+        opacity: 100%;
+    }
+    
+    .carousel__anterior {
+        left: 8px;
+    }
+    
+    .carousel__siguiente {
+        right: 8px;
+    }
+    
+    .carousel__lista {
+        overflow: hidden;
+    }
+    
+    .carousel__elemento {
+        text-align: center;
+        width: 50px;
+        height: 50px;	
+        align-items: center;
+    }
+    
+    .honda{
+        width: 180px;
+        object-fit:scale-down;
+    }
+    
+    .nissan{
+        width: 180px ;
+    }
+    
+    .bmw{
+        width: 180px ;
+    }
+    
+    .ford{
+        width: 180px ;
+    }
+    
+    .susuki{
+        width: 180px ;
+    }
+    
+    .kia{
+        width: 180px;
+    }
+    
+    .ferrari{
+        width: 180px;
+    }
+    
+    .carousel__indicadores .glider-dot {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: rgb(0, 0, 0);
+        opacity: .2;
+        border-radius: 0;
+    }
+    
+    .carousel__indicadores .glider-dot:hover {
+        opacity: .5;
+    }
+    
+    .carousel__indicadores .glider-dot.active {
+        opacity: 1;
+    }
+    
+    .contacto{
+        display: grid;
+        grid-template-columns: 3% 94% 3%;
+    }
+    #map{
+        height: 400px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .mapa{
+        height: 100%;
+        width: 100%;
+    }
+    .telefono{
+      background: #222222c6;
+      color: #fff;
+      width: 100%;
+      border-bottom: 2px solid #fff;
+      text-align: center;
+      font-size: 16px;
+    }
+    .conjunto-T{
+        display: grid;
+        grid-template-columns: 3% 31.3% 31.3% 31.3% 3%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .e-mail{
+        text-align: left;
+        font-size: 14px;
+    }
+    .c{
+        text-align: right;
+    }
+
+    .contacto{
+        display: grid;
+        grid-template-rows: 100%;
+    }
+
+    .mapa{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .visual{
+        grid-template-rows: repeat(2, 380px);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .visual{
+        grid-template-rows: 460px 250px;
+    }
+
+    .conjunto-T{
+        grid-template-columns: 3% 48.5% 48.5% ;
+    }  
+    
+    .c{
+        text-align: center;
+    }
+
 }
