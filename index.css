@@ -313,7 +313,18 @@ h1, h2, h3{
 }
 
 @media screen and (max-width: 2000px){
- 
+    .ventanal{
+        grid-template-rows: repeat(2,605px);
+    }
+
+    .ventanal .element1{
+        grid-template-rows: repeat(2,169.5px) 191px 75px;
+    }
+
+    .ventanal .element2,.ventanal .element4{
+        grid-template-rows: repeat(2,240.5px) 49px 75px;    
+    }
+    
 
     .nav p{
         font-size: 20px;
@@ -1044,13 +1055,14 @@ h1, h2, h3{
 @media screen and (max-width: 2000px){
     .visual{
         margin-top: 100px;
-        grid-template-columns: 14% 35% 0% 2% 33% 14%;
+        grid-template-columns: 14% 35% 0% 0% 33% 14%;
         grid-template-rows: 500px;
     }
 
     .visual .imagen .imagen1 {
         object-fit: scale-down;
     }
+
 
     .titulo h2{
         font-size: 54px;
@@ -1103,7 +1115,7 @@ h1, h2, h3{
 
     .contacto{
         display: grid;
-        grid-template-columns: 14% 72% 14%;
+        grid-template-columns: 13% 74% 13%;
         grid-template-rows: 500px;
     }
 
@@ -1326,7 +1338,7 @@ h1, h2, h3{
     
     .visual{
         display: grid;
-        margin-top: 70px;
+        margin-top: 60px;
         grid-template-columns: 2% 94% 2% ;
         grid-template-rows: repeat(2, 390px);
     }
@@ -1569,39 +1581,7 @@ input{
     color: #000;
 }
 
-@media screen and (max-width: 2000px){
-
-    .cuadricula{
-        grid-template-columns: repeat(2, 50%) ;
-        gap: 0;
-        row-gap: 5%;
-        }
-
-    .texto{
-        width: 60%;
-        margin: auto;
-    }
-
-    .textoG, .imagen1{
-        width: 200px;
-        height: 200px;;
-    }
-
-    .texto p{
-        font-size: 25px;
-    }
-    
-    .texto h2{
-        font-size: 35px;
-    }
-
-    input{
-        font-size: 16px;
-    }
-}
-
-
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 2800px){
 
     .cuadricula{
         grid-template-columns: repeat(2, 50%) ;
